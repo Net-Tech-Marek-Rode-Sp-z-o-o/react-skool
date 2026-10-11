@@ -157,12 +157,12 @@ Right-click `format.test.ts` and run it. PhpStorm detects Vitest and shows the r
 
 ## Acceptance criteria
 
-- [ ] `pnpm dev` shows the app in the browser.
-- [ ] `tsconfig.app.json` has `strict` and `noUncheckedIndexedAccess` turned on.
-- [ ] `formatPrice` has at least four tests, and `pnpm test:run` passes.
-- [ ] `format.ts` creates the `Intl.NumberFormat` instance once, outside the function.
-- [ ] `pnpm typecheck` passes.
-- [ ] Your commits are on GitHub, with Conventional Commits messages, and `node_modules` is not committed.
+- [x] `pnpm dev` shows the app in the browser.
+- [x] `tsconfig.app.json` has `strict` and `noUncheckedIndexedAccess` turned on.
+- [x] `formatPrice` has at least four tests, and `pnpm test:run` passes.
+- [x] `format.ts` creates the `Intl.NumberFormat` instance once, outside the function.
+- [x] `pnpm typecheck` passes.
+- [x] Your commits are on GitHub, with Conventional Commits messages, and `node_modules` is not committed.
 
 ## Check
 
