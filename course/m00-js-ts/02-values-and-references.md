@@ -159,12 +159,12 @@ const items = Object.freeze([Object.freeze({ product: someProduct, quantity: 1 }
 
 ## Acceptance criteria
 
-- [ ] All six functions are exported and have explicit parameter and return types.
-- [ ] No function changes its arguments, and tests with frozen inputs prove it.
-- [ ] At least 10 tests, all passing.
-- [ ] Money values are rounded to two decimals.
-- [ ] The functions use array methods (`map`, `filter`, `reduce`, `find`) and no loops. Loops are fine in JS in general. This lesson is practice for the methods.
-- [ ] `pnpm typecheck` passes.
+- [x] All six functions are exported and have explicit parameter and return types.
+- [x] No function changes its arguments, and tests with frozen inputs prove it.
+- [x] At least 10 tests, all passing.
+- [x] Money values are rounded to two decimals.
+- [x] The functions use array methods (`map`, `filter`, `reduce`, `find`) and no loops. Loops are fine in JS in general. This lesson is practice for the methods.
+- [x] `pnpm typecheck` passes.
 
 ## Check
 
