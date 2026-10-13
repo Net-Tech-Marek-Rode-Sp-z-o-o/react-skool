@@ -156,13 +156,13 @@ The `scripts/` folder isn't covered by any tsconfig, so `pnpm typecheck` doesn't
 
 ## Acceptance criteria
 
-- [ ] `ApiError` has `status` and `url`, and every response that is not ok throws it.
-- [ ] The query string contains only the parameters that were passed.
-- [ ] The tests make no network requests. They pass with your network turned off.
-- [ ] Every `expect(...).rejects` is awaited.
-- [ ] `api-client.ts` has no runtime imports, only `import type`.
-- [ ] `node scripts/try-api.ts` prints three products.
-- [ ] `pnpm test:run` and `pnpm typecheck` pass.
+- [x] `ApiError` has `status` and `url`, and every response that is not ok throws it.
+- [x] The query string contains only the parameters that were passed.
+- [x] The tests make no network requests. They pass with your network turned off.
+- [x] Every `expect(...).rejects` is awaited.
+- [x] `api-client.ts` has no runtime imports, only `import type`.
+- [x] `node scripts/try-api.ts` prints three products.
+- [x] `pnpm test:run` and `pnpm typecheck` pass.
 
 ## Check
 

@@ -59,3 +59,10 @@ export type ProductList = {
 
 export const PRODUCT_SORTS = [ 'price-asc', 'price-desc', 'rating-desc', 'title-asc'] as const
 export type ProductSort = (typeof PRODUCT_SORTS)[number]
+
+export type ProductParams = {
+    limit?: number
+    skip?: number
+    sortBy?: 'title' | 'price' | 'rating'
+    order?: 'asc' | 'desc'
+}
