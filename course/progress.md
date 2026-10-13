@@ -33,3 +33,7 @@ Notes: addItem, updateQuantity and removeItem are pure and correct, a probe with
 ## 0.2 hint (2026-10-12)
 Solution shown, part 1 of the review fixes: roundMoney helper, finalPrice, lineTotal and cartTotals rounded once per line and once per total, lineDiscount removed.
 Revisit: why rounding the unit price first gives 17.88; subtotal as list prices, total as subtotal - savings.
+
+## 0.3 hint (2026-10-13)
+Solution shown: Claude wrote Dimension, Review, ProductMeta, Product, ProductList, CartProduct as Pick<Product, ...>, types.test.ts, and the sort.ts fixes (no `return` before `switch`, subtraction comparators, toSorted on a readonly input, never default, isProductSort type guard), and the payment.ts fixes (export, ${} interpolation, last four digits, switch on method.type, typos cash-on-delivery and cvc, PAYMENT_TYPES kept with `satisfies readonly PaymentMethod["type"][]`, file renamed from payments.ts), payment.test.ts and sort.test.ts. The learner asked to skip writing them.
+Revisit: switch is a statement, not an expression like PHP match; comparator returns negative/zero/positive; sort mutates a shared array; `value is X` return type; an annotated copy of the discriminant (`const type: PaymentType = method.type`) breaks narrowing. Course gap: lesson 0.3 says the products fixture has 12 products, it has 30 (limit=30).

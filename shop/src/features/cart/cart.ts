@@ -1,23 +1,4 @@
-export type CartProduct = {
-    id: number
-    title: string
-    price: number
-    discountPercentage: number
-    thumbnail: string
-}
-
-export type CartItem = {
-    product: CartProduct
-    quantity: number
-}
-
-export type CartTotals = {
-    itemCount: number
-    subtotal: number
-    savings: number
-    total: number
-}
-
+import type {CartItem, CartProduct, CartTotals} from "./types.ts";
 
 export function finalPrice(item: CartProduct): number {
     return Math.round(item.price * (1 - item.discountPercentage / 100) * 100 ) / 100;

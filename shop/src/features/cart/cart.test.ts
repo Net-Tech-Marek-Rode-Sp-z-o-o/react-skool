@@ -1,5 +1,6 @@
 import {describe, expect, it} from 'vitest'
-import {addItem, type CartItem, type CartProduct, cartTotals, type CartTotals, updateQuantity} from "./cart.ts";
+import {addItem, cartTotals, updateQuantity} from "./cart.ts";
+import type {CartItem, CartProduct, CartTotals} from "./types.ts";
 
 const mascara: CartProduct = Object.freeze({
     id: 1,

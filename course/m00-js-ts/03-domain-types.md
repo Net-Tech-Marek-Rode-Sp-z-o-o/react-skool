@@ -179,13 +179,13 @@ Write `describePayment(method: PaymentMethod): string`. It returns `"Card ending
 
 ## Acceptance criteria
 
-- [ ] Assigning the products fixture to `ProductList` typechecks, and a test runs on the fixture.
-- [ ] There is no `any` in your types.
-- [ ] `CartProduct` is derived from `Product` with a utility type. The 0.2 tests still pass.
-- [ ] `ProductSort` is derived from a const array, and `isProductSort` is a type guard.
-- [ ] `sortProducts` and `describePayment` use exhaustive switches. You saw the compile error when a union member had no case.
-- [ ] `sortProducts` doesn't mutate its input.
-- [ ] `pnpm test` and `pnpm typecheck` pass.
+- [x] Assigning the products fixture to `ProductList` typechecks, and a test runs on the fixture.
+- [x] There is no `any` in your types.
+- [x] `CartProduct` is derived from `Product` with a utility type. The 0.2 tests still pass.
+- [x] `ProductSort` is derived from a const array, and `isProductSort` is a type guard.
+- [x] `sortProducts` and `describePayment` use exhaustive switches. You saw the compile error when a union member had no case.
+- [x] `sortProducts` doesn't mutate its input.
+- [x] `pnpm test` and `pnpm typecheck` pass.
 
 ## Check
 
